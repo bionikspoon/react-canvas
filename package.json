@@ -33,7 +33,7 @@
     "react": "17.0.1"
   },
   "scripts": {
-    "storybook": "start-storybook -p 6006",
+    "start": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "husky": {
