@@ -1,0 +1,38 @@
+{
+  "name": "react-canvas",
+  "version": "0.0.0",
+  "description": "Converting an imperative API to a declarative API, round 1.",
+  "main": "lib/index.ts",
+  "repository": "git@github.com:bionikspoon/react-canvas.git",
+  "author": "Manu Phatak <manu@phatak.io>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
+    "eslint": "^7.12.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.14.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.2",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.3"
+  },
+  "scripts": {
+    "start": "parcel public/index.html",
+    "build": "parcel build public/index.html"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
