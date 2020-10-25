@@ -2,7 +2,7 @@
   "name": "react-canvas",
   "version": "0.0.0",
   "description": "Converting an imperative API to a declarative API, round 1.",
-  "main": "lib/index.ts",
+  "main": "lib/index.tsx",
   "repository": "git@github.com:bionikspoon/react-canvas.git",
   "author": "Manu Phatak <manu@phatak.io>",
   "license": "MIT",
@@ -13,6 +13,7 @@
     "@storybook/addon-essentials": "6.0.27",
     "@storybook/addon-links": "6.0.27",
     "@storybook/react": "6.0.27",
+    "@types/fabric": "3.6.9",
     "@typescript-eslint/eslint-plugin": "4.5.0",
     "@typescript-eslint/parser": "4.5.0",
     "babel-loader": "8.1.0",
@@ -44,5 +45,7 @@
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
   },
-  "dependencies": {}
+  "dependencies": {
+    "fabric": "4.2.0"
+  }
 }
